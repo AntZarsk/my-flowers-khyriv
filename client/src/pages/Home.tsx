@@ -905,16 +905,7 @@ function ContactInfo() {
                 <Phone className="w-6 h-6 text-cream" />
                 <div className="text-center">
                   <p className="text-cream/60 text-sm mb-1">Телефон</p>
-                  <a
-                    href={`tel:${PHONE}`}
-                    onClick={(e) => {
-                      if (isMobile) {
-                        e.preventDefault();
-                        openOrderModal();
-                      }
-                    }}
-                    className="text-cream font-semibold hover:text-rose transition-colors"
-                  >
+                  <a href={`tel:${PHONE}`} className="text-cream font-semibold hover:text-rose transition-colors">
                     {PHONE_DISPLAY}
                   </a>
                 </div>
