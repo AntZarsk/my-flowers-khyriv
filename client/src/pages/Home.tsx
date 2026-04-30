@@ -70,6 +70,7 @@ const PHONE = "+380664777329";
 const PHONE_DISPLAY = "+380 66 477 7329";
 const ADDRESS = "вул. Василя Стуса, 26, Хирів";
 const INSTAGRAM = "https://www.instagram.com/my_flowers_decor/";
+const TIKTOK = "https://www.tiktok.com/@my_flowers_2024?_r=1&_t=ZM-92dQLkmLATo&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn9nB6J_yy-hmlvxVqtVoXcUr12XC9J2gHX9X0DfM8N5Zfo-N7xjjiT8pL0Ig_aem_TYiKsBbRAShBLMlNDK3emg";
 const FACEBOOK = "https://www.facebook.com/profile.php?id=61566498498498";
 const GOOGLE_MAPS = "https://www.google.com/maps/search/%D0%9A%D0%B2%D1%96%D1%82%D0%B8+%D0%A5%D0%B8%D1%80%D1%96%D0%B2+My+Flowers";
 
@@ -402,7 +403,7 @@ function Hero() {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-wrap gap-4 items-center"
@@ -930,24 +931,35 @@ function ContactInfo() {
           </FadeIn>
 
           <FadeIn delay={0.4}>
-            <div className="flex gap-4 justify-center mt-8">
-              <a
-                href={INSTAGRAM}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-cream transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href={FACEBOOK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-cream transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-            </div>
+          <div className="flex gap-4 justify-center mt-8">
+            <a
+              href={INSTAGRAM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-cream transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href={TIKTOK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-cream transition-colors"
+              aria-label="TikTok"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+                <path d="M16.6 5.82c.06.45.27.97.63 1.55.78 1.24 1.86 2 3.2 2.25v2.64c-1.3.01-2.62-.33-3.8-1.01v5.92c0 3.3-2.68 5.98-5.98 5.98A5.98 5.98 0 0 1 5 17.17c0-3.3 2.68-5.98 5.98-5.98.28 0 .55.02.82.06v2.77a3.1 3.1 0 1 0 2.27 2.99V1h2.53c.03 1.06.3 2.08.79 3.08.55 1.1 1.38 1.7 2.51 1.74v2.66c-1.63-.05-3.1-.57-4.3-1.66z" />
+              </svg>
+            </a>
+            <a
+              href={FACEBOOK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-cream transition-colors"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+          </div>
           </FadeIn>
         </div>
       </div>
@@ -1093,6 +1105,17 @@ function Footer() {
               className="text-cream/50 hover:text-cream transition-colors"
             >
               <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href={TIKTOK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cream/50 hover:text-cream transition-colors"
+              aria-label="TikTok"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+                <path d="M16.6 5.82c.06.45.27.97.63 1.55.78 1.24 1.86 2 3.2 2.25v2.64c-1.3.01-2.62-.33-3.8-1.01v5.92c0 3.3-2.68 5.98-5.98 5.98A5.98 5.98 0 0 1 5 17.17c0-3.3 2.68-5.98 5.98-5.98.28 0 .55.02.82.06v2.77a3.1 3.1 0 1 0 2.27 2.99V1h2.53c.03 1.06.3 2.08.79 3.08.55 1.1 1.38 1.7 2.51 1.74v2.66c-1.63-.05-3.1-.57-4.3-1.66z" />
+              </svg>
             </a>
             <a
               href={FACEBOOK}
